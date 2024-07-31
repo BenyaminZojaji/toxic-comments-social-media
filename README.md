@@ -1,1 +1,9 @@
-# toxic-comments-social-media
+# Toxic Comments Social Media
+
+### Abstract
+The increasing prevalence of toxic comments on social media platforms has necessitated the development of effective detection and moderation tools. This project investigates the application of machine learning models to identify and classify toxic comments, aiming to contribute to safer online interactions. The research primarily focuses on two models: a Long Short-Term Memory (LSTM) neural network and a Logistic Regression classifier.
+The dataset includes a large collection of labeled social media comments, categorized into 6 groups toxic, severe_toxic, insult, etc. The LSTM model employs GloVe word embeddings to convert words into vector representations, capturing semantic relationships. Its architecture includes an embedding layer, followed by an LSTM layer and dense layers, which are designed to handle the sequential nature of text data. Extensive preprocessing steps, including tokenization and padding, are performed to prepare the data for modeling. The updated LSTM model achieved impressive results, with an accuracy of 93%, and an F1 score of 72%.
+The Logistic Regression model utilizes TF-IDF vectorization to transform text into numerical features suitable for linear classification. This approach, while more traditional, provides a baseline for comparison. The model's performance metrics include an accuracy of 92% and an F1 score of 69%. These results, though slightly lower than those of the LSTM model, demonstrate the effectiveness of simpler models in text classification tasks.
+This study highlights the strengths and limitations of both models, showing that while the LSTM model excels in capturing complex patterns in the data due to its deep learning architecture, the Logistic Regression model offers a robust and interpretable alternative. The findings underscore the potential of machine learning in automating the detection of toxic comments, thereby enhancing content moderation and fostering healthier online communities.
+
+
